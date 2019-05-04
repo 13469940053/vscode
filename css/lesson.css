@@ -1,0 +1,207 @@
+ *{margin:0px; padding:0px; font-family:"微软雅黑"; list-style-type:none;}
+  body{background:#f5eded url("") repeat-y top center; }
+/*header部*/
+#page_header{width:100%; height:100px;margin:0px auto; position:relative;z-index:1;}
+#page{width:1180px; background:#fff; margin:-8px auto 0px; box-shadow:0px 0px 10px #000; border:10px solid #fff;}
+#page .page_content{padding-top:50px;}
+
+  /*Info*/
+  #Info{width:1049px; height:240px; margin:70px auto 0px; }
+  #Info .Text{width:360px; height:190; float:left;  font-size:14px; color:#666; }
+  #Info .Text dl dt{width:80px;height:190px; float:left;}
+  #Info .Text dl dd{width:250px; line-height:45px; float:right; border-bottom:1px dotted #ddd;}
+  #Info .Text dl dd.no{border:0px; text-align:right; padding-top:10px;}
+
+  #Info .Pic{width:600px;height:190px; float:right; padding:10px;}
+  #Info .Pic dl dt{width:80px;height:190px; float:left;}
+  #Info .Pic dl dd{width:460px;float:right; }
+  #Info .Pic dl dd p{line-height:45px; padding:0px;font-size:14px; border-bottom:1px dotted #ddd; color:#666; }
+
+  #Info h3{font-size:16px; font-weight:500; line-height:35px; margin-top:20px; padding-left:50px;}
+  #Info p{font-size:14px; line-height:35px;padding-left:50px;}
+
+
+  /*课程介绍*/
+  #CourseInfo{width:1050px;margin:0px auto;}
+
+  .CourseVip{width:1000px; border:1px solid #000;font-family:"微软雅黑"; margin:0px auto;}
+  .CourseVip h1{height:55px; font-size:30px; text-align:center; line-height:55px;}
+  .CourseVip h2{height:45px; line-height:45px; text-indent:10px;font-size:16px;background:#f9f9f9;border-bottom:1px solid #000; }
+
+
+  .CourseVip .common {position:relative;line-height:40px; font-size:12px; padding-left:10px; border-bottom:1px solid #000;}
+  .CourseVip .Footer{line-height:80px; color:#fff; background:#000; font-size:30px; text-align:center;}
+  .CourseVip .Header{line-height:80px; color:#fff; background:#000; text-align:center; font-size:30px;}
+  .CourseVip .price p {text-indent:200px; font-size:16px; color:red;}
+
+  #CourseInfo .CourseVip .common .VipCase{width:200px;position:absolute; left:739px; top:-45px;
+          border:1px solid #000; background:#ddd;z-index:33;}
+#CourseInfo .CourseVip .common .VipCase h3{line-height:35px; width:100%; background:#000; color:#fff; text-align:center;
+          font-size:14px; cursor:pointer;}
+#CourseInfo .CourseVip  p a{display:inline-block; text-decoration:none; color:red; margin:0px 20px; }
+#CourseInfo .CourseVip .common .VipCase ul{display:none;}
+#CourseInfo .CourseVip .common .VipCase ul li{line-height:35px; font-size:12px; text-indent:5px;border-bottom:1px dotted #666;
+          color:#000; cursor:pointer; }
+#CourseInfo .CourseVip .common .VipCase ul li div{z-index:333;max-width:700px; position:absolute; left:202px; top:0px;padding:10px;display:none;  border:1px solid #000;background:#fff;}
+
+
+/*codelist*/
+  .indexCourse{width:987px;margin:20px auto;}
+  .indexCourse h3{width:600px;margin:0px auto;height:138px; font-size:30px; color:#fff; text-align:center; line-height:90px;}
+  .indexCourse .indexCourseVip{width:987px;height:221px;}
+  .indexCourse .indexCourseVip dl dt{ height:150px;width:155px; margin-left:100px; padding-top:30px;
+              float:left; margin-right:20px;  text-align:center;}
+  .indexCourse .indexCourseVip dl dt span{font-size:50px;color:#fff; text-align:center;
+                    display:block; margin-bottom:30px;}
+  .indexCourse .indexCourseVip dl dt font{font-size:18px; color:#fff; text-shadow:0px 0px 5px #fff;}
+  .indexCourse .indexCourseVip dl dt span{padding:0px 10px;  color:#fff;}
+  .indexCourse .indexCourseVip dl dd{width:660px;height:130px; margin:30px 50px 0px 0px; float:right;}
+  .indexCourse .indexCourseVip dl dd h4{font-weight:bold; color:#029166; font-size:20px; padding-bottom:5px;}
+  .indexCourse .indexCourseVip dl dd h4 span{float:right; padding-right:20px; font-size:16px; }
+  .indexCourse .indexCourseVip dl dd p{line-height:30px; color:#029166; font-size:16px;letter-spacing:2px; }
+  .indexCourse .indexCourseVip dl dd p a{border-radius:5px; background:#26b5ff; font-size:12px; padding:5px 10px; text-decoration:none; color:#fff;}
+  .indexCourse .indexCourseVip dl dd p.but{text-align:right; padding-right:30px;}
+  .bg1{background:url("") no-repeat;}
+  .bg2{background:url("") no-repeat;}
+  .bg3{background:url("") no-repeat;}
+  .bg1 span.col{background:rgba(255,161,14,0.9);}
+  .bg2 span.col{background:rgba(38,181,255,0.9);}
+  .bg3 span.col{background:rgba(255,117,175,0.9);}
+  .indexCourseVip dd{position:relative;}
+  .indexCourseVip dd .but{position:absolute;right:0px;bottom:0px;}
+
+
+
+
+
+        .CourseVip .title {
+            padding: 20px 0px;
+        }
+
+        .CourseVip .title h1 {
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .CourseVip .title p {
+            line-height: 35px;
+            text-align: center;
+        }
+
+        .CourseVip .title a.btn {
+            display: block;
+            margin: 10px auto;
+            line-height: 45px;
+            background: #ff0066;
+            color: #fff;
+            width: 300px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .CourseVip h2 {
+            height: 45px;
+            line-height: 45px;
+            text-indent: 10px;
+            font-size: 16px;
+            background: #f9f9f9;
+            border-bottom: 1px solid #000;
+        }
+
+        .CourseVip .common {
+            position: relative;
+            line-height: 40px;
+            font-size: 12px;
+            padding-left: 10px;
+            border-bottom: 1px solid #000;
+        }
+
+        .CourseVip .Footer {
+            line-height: 80px;
+            color: #fff;
+            background: #000;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .CourseVip .Header {
+            line-height: 80px;
+            color: #fff;
+            background: #000;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .CourseVip .price p {
+            text-indent: 200px;
+            font-size: 16px;
+            color: red;
+        }
+
+        #CourseInfo .CourseVip .common .VipCase {
+            width: 200px;
+            position: absolute;
+            right: 80px;
+            top: -42px;
+            border: 1px solid #000;
+            background: #ddd;
+            z-index: 33;
+        }
+
+        #CourseInfo .CourseVip .common .VipCase h3 {
+            line-height: 35px;
+            width: 100%;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #CourseInfo .CourseVip p a {
+            display: inline-block;
+            text-decoration: none;
+            color: red;
+            margin: 0 20px;
+        }
+
+        #CourseInfo .CourseVip .common .VipCase ul {
+            display: none;
+        }
+
+
+        #CourseInfo .CourseVip .common .VipCase ul li {
+            line-height: 35px;
+            font-size: 12px;
+            text-indent: 5px;
+            border-bottom: 1px dotted #666;
+            color: #000;
+            cursor: pointer;
+        }
+
+        #CourseInfo .CourseVip .common .VipCase ul li div {
+            z-index: 333;
+            max-width: 700px;
+            position: absolute;
+            left: 202px;
+            top: 0;
+            padding: 10px;
+            display: none;
+            border: 1px solid #000;
+            background: #fff;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+/*网站底部*/
+#footer{width:100%; height:80px; background:#293240; color:#ddd; text-align:center; font-size:14px; line-height:80px;font-family:"微软雅黑";}

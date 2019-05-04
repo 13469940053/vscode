@@ -1,0 +1,602 @@
+<!--
+    声明文档类型: html(html5)
+    作用：符合w3c的统一标准规范
+    每个浏览器对html css js的代码都有不同编译模式(兼容模式)
+-->
+<!octype html>
+<html lang="en">
+    <!--HyperText Markup Language 超文本标记语言 根目录节点标签-->
+<head>
+    <!--头部 规定一些信息:提供给浏览器识别 用户看不到 非可视化标签-->
+    <meta name="Author" content="张成&无风不起浪@你,tel:13469940053,2508723631@qq.com">
+    <meta name="keywords" content="无浪网、无浪素材网、无浪资源网、无风不起浪网" />
+    <meta name="description" content="无风不起浪网由张成初期学习前端知识所做的项目，网页一体网站，仅供学习和资料共享使用！" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>02网站前端开发-Javascript适合有基础学员学习</title>
+
+    <link rel="stylesheet" type="text/css" href="css/lesson.css">
+    <link rel="icon" type="img/png" href="">
+</head>
+    <<body>
+        <div id="page_header"></div>
+        <div id="mark_mask" style="display:none;position:fixed;top:40px;left:0;z-index:99999999;height:1000px;width:100%;background:rgba(0,0,0,0.4);"></div>
+        <div id="page">
+            <div class="page_content">
+                <div id="CourseInfo">
+                    <div id="BootStrap" class="CourseVip">
+                        <div class="title">
+                            <h1>Javascript基础到实战系列课程（共2.5个月+）</h1>
+                            <p>本课程将打破传统教学，独一无二的特色，全程以知识点+案例进行讲解，让你吃透每一个知识点</p>
+                        </div>
+                        <div class="Header">第一阶段：JavaScript基础</div>
+                        <h2>第一章：认识JavaScript 获取元素 操作DOM 事件 函数 this关键字 变量的声明（2课时）</h2>
+                        <div class="common">
+                            <p> <strong>1、学前准备</strong>
+                                开发工具
+                            </p>
+                            <p> <strong>2、学习方法</strong>
+                                作业 QQ群交流 互动 解决问题的方法
+                            </p>
+                            <p>
+                                <strong>3、初识JavaScript（JS）</strong>
+                            </p>
+                            <p>
+                                <strong>4、JS代码写在哪里？</strong>
+                                script标签位置 引用js文件 标签属性操作
+                            </p>
+                            <p>
+                                <strong>5、写JS代码需要注意什么</strong>
+                            </p>
+                            <p>
+                                <strong>6、JS里的系统弹窗代码</strong>
+                                alert()、 confirm()、prompt()
+                            </p>
+                            <p>
+                                <strong>7、JS的注释</strong>
+                                单行 多行
+                            </p>
+                            <p>
+                                <strong>8、获取元素以及修改内容</strong>
+                                getElementById、getElementsByClassName、getElementsByTagName、 getElementsByName、querySelector 、 querySelectorAll、innerHTML 、innerText 、write()方法
+                            </p>
+                            <p>
+                                <strong>9、JS DOM0级事件</strong>
+                                事件、方法/函数 、this的简单认识
+                            </p>
+                            <p style="">
+                                <strong>10、定义变量</strong>
+                                （es5：var es6：let 、const）
+                            </p>
+                            <div class="VipCase" style="z-index: 336;">
+                                <h3>本节课案例+作业</h3>
+                                <ul style="display: none;">
+                                    <li>案例1-点击替换a标签</li>
+                                    <li>案例2-弹窗取值</li>
+                                    <li>作业1-引入外部JS</li>
+                                    <li>作业2-两个DIV内容的各种变化</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第二章：操作属性 操作样式（1课时）</h2>
+                        <div class="common">
+                            <p style="">
+                                <strong>1、操作标签属性</strong>
+                                getAttribute/setAttribute/removeAttribute 自定义属性和自定义标签属性区别
+                            </p>
+                            <p>
+                                <strong>2、+ 号的初步认识</strong>
+                                数字相加 、字符拼接 、各种缩写
+                            </p>
+                            <p>
+                                <strong>3、操作css样式</strong>
+                                改变css样式 .style.属性 .style.cssText 属性操作注意事项
+                            </p>
+                            <p>
+                                <strong>4、js对象的自定义属性</strong>
+                                和标签属性的区别
+                            </p>
+                            <p>
+                                <strong>5、[]的初步认识</strong>
+                                代替点操作符
+                            </p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>案例1_点击图片自动替换</li>
+                                    <li>案例2_页面添加新闻功能</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第三章：数据类型 显示类型转换 判断（1课时）</h2>
+                        <div class="common">
+                            <p>
+                                <strong>1、ES5数据类型</strong>
+                                number、string、boolean、null、undefined、object
+                            </p>
+                            <p style="color: red;">
+                                <strong>2、ES6数据类型</strong>
+                                symbol（出现的原因，能解决的问题）
+                            </p>
+                            <p>
+                                <strong>3、数组/ json的简单介绍</strong>
+                                下标、length、属性、值
+                            </p>
+                            <p>
+                                <strong>4、显式类型转换</strong>
+                                Number() 、 parseInt() 、parseFloat()
+                            </p>
+                            <p>
+                                <strong>5、if switch判断语句</strong>
+                                if介如 条件判断 if的多种格式 switch介绍
+                            </p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>作业1_文字放大缩小功能</li>
+                                    <li>作业2_QQ说说发表功能</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第四章：迭代器 自定义属性运用（2课时）</h2>
+                        <div class="common">
+                            <p>
+                                <strong>1、for迭代器</strong>
+                                for介绍 、 break/continue 、嵌套for、死循环
+                            </p>
+                            <p>
+                                <strong>2、while</strong>
+                                while介绍 、do while 介绍
+                            </p>
+                            <p>
+                                <strong>3、自定义属性</strong>
+                                设置序号、结合for循环的运用
+                            </p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>案例1-选项卡的原理</li>
+                                    <li>案例2-for循环生成10个div</li>
+                                    <li>作业1-生成左尖括号图形</li>
+                                    <li>作业2-多方位九九乘法表</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第五章：运算符 类型转换（1课时）</h2>
+                        <div class="common">
+                            <p>
+                                <strong>1、算术运算符</strong>
+                                + - * / % **
+                            </p>
+                            <p>
+                                <strong>2、赋值运算符</strong>
+                                =、+=、-= *=、/=、%=、++、--、**=
+                            </p>
+                            <p>
+                                <strong>3、比较运算符</strong>
+                                &lt; &gt; == &lt;=&gt;= != === !==
+                            </p>
+                            <p>
+                                <strong>4、逻辑运算符</strong>
+                                &amp;&amp; || ！ 逻辑运算符做流程控制
+                            </p>
+                            <p>
+                                <strong>5、位运算符</strong>
+                                ~ | &amp;  ^  &lt;&lt;  &gt;&gt; &gt;&gt;&gt;
+                            </p>
+                            <p>
+                                <strong>6、隐式类型转换</strong>
+                                各运算的隐式转换
+                            </p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>案例1_二级下拉菜单</li>
+                                    <li>案例2_自定义复选框</li>
+                                    <li>作业1_图片的点击轮播切换</li>
+                                    <li>作业2_360左侧滑动导航</li>
+                                    <li>作业2_JS制作QQ选项卡功能</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第六章：函数（2课时）</h2>
+                        <div class="common">
+                            <p style="color: red;">
+                                <strong>1、函数分类</strong>
+                                具名函数、匿名函数 、函数定义、 函数表达式、函数表达式自执行、箭头函数（es6）
+                            </p>
+                            <p style="color: red;">
+                                <strong>2、参数</strong>
+                                实参、形参、不定参 、 rest参数（es6）、 参数的默认值（es6）
+                            </p>
+                            <p>
+                                <strong>3、return</strong>
+                                return的用途
+                            </p>
+                            <p>
+                                <strong>4、this深刻认识</strong>
+                                自执行this指向、事件函数this指向、对象方法this指向
+                            </p>
+                            <p>
+                                <strong>5、严格模式</strong>
+                                use strict模式，以及this在严格模式的表现（严格模式下获取顶层对象）
+                            </p>
+                            <p style="color: red;">
+                                <strong>6 、改变this指向</strong>
+                                call、apply、bind
+                            </p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>购物中心结算功能</li>
+                                    <li>星级打分功能</li>
+                                    <li>点击可编辑表格</li>
+                                    <li>多层图片选项卡效果</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第七章：js解析顺序和作用域（面试必考）（1课时）</h2>
+                        <div class="common" style="color: red;">
+                            <p>
+                                <strong>1、作用域详解</strong>
+                                作用域、作用域链
+                            </p>
+                            <p>
+                                <strong>2、解析顺序</strong>
+                                es5解析顺序与es6的异同
+                            </p>
+                            <p>
+                                <strong>3、变量提升</strong>
+                                es5变量提升的原因（编译、执行阶段介绍）
+                            </p>
+                            <p>
+                                <strong>4、闭包</strong>
+                                什么是闭包、创建闭包、运用、注意事项
+                            </p>
+                            <p>
+                                <strong>5、递归</strong>
+                                (案例-斐波那契数列)
+                            </p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>多道经典面试题详解</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第八章：数组方法和字符串方法(2课时)</h2>
+                        <div class="common" style="color:#f5a;font-weight:bold;">
+                            <p>
+                                <strong>1、 ES5数组方法</strong>
+                                length 、 [] 、push() 、 unshift() 、 pop() 、 shift()、splice( )、sort()、concat()、join()、filter()、isArray( )、forEach()、map()等
+                            </p>
+                            <p>
+                                <strong>2、ES6数组方法</strong>
+                                Array.from()、Array.of()、copyWithin()、find()、findIndex() 、fill()、entries()，keys() 和 values()、includes()等
+                            </p>
+                            <p>
+                                <strong>3、ES5字符串方法</strong>
+                                [] 、 charAt() 、charCodeAt()、String.fromCharCode()、indexOf / lastIndexOf、substring 、slice、toUpperCase() / toLowerCase()、split()等
+                            </p>
+                            <p>
+                                <strong>4、ES6字符串方法</strong>
+                                includes()、startsWith()、endsWith()、repeat()、padStart()、padEnd()等
+                            </p>
+                            <p>
+                                <strong>5、ES6模板字符串</strong>
+                            </p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>文字增删改查案例</li>
+                                    <li>商品按照价格排序</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第九章：定时器 Math数学函数（2课时）</h2>
+                        <div class="common" style="color:#f5a;font-weight:bold;">
+                            <p>
+                                <strong>1、定时器</strong>
+                                setTimeout、setInterval、requestAnimationFrame
+                            </p>
+                            <p>
+                                <strong>2、定时器参数注意事项</strong>
+                                eval方法的介绍
+                            </p>
+                            <p>
+                                <strong>3、数学函数</strong>
+                                Math.random、Math.ceil，Math.floor，Math.round，Math.max，Math.min
+                            </p>
+                            <p>
+                                <strong>4、弧度与角度</strong>
+                                弧度和角度的相互转换
+                            </p>
+                            <p>
+                                <strong>5、三角函数</strong>
+                                Math.sin Math.cos Math.tan Math.asin Math.atan Math.acos等
+                            </p>
+                            <p>
+                                <strong>6、es6扩展</strong>
+                                Math.trunc()、Math.sign()、Math.cbrt()、Math.hypot()等
+                            </p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>案例1_倒计时跳转</li>
+                                    <li>案例2_图片滑门效果</li>
+                                    <li>案例3_随机色卡</li>
+                                    <li>案例4_圆周运动</li>
+                                    <li>作业1_内容竖直向上向下滚动</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第十章：日期对象（1课时）</h2>
+                        <div class="common" style="color:#f5a;font-weight:bold;">
+                            <p>
+                                <strong>1、日期对象data 创建一个时间点 new data()等更多参数</strong>
+                            </p>
+                            <p>
+                                <strong>2、Date.parse(),Date.UTC()</strong>
+                            </p>
+                            <p>
+                                <strong>3、几种日期格式化方法</strong>
+                                toDateString()、toTimeString()、toLocaleDateString()、toLocaleTimeString()、toUTCString()、toLocalString()
+                            </p>
+                            <p>
+                                <strong>4、关于日期的方法</strong>
+                                getTime()、getFullYear() 、getMonth()、getDate() 、getHours() 、getMinutes()、getSeconds()、getDay()
+                            </p>
+                            <p>
+                                <strong>5、getTimezoneOffset</strong>
+                            </p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>案例1_系统时间</li>
+                                    <li>案例2_倒计时</li>
+                                    <li>作业2_图片时钟</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第十一章：DOM、BOM（2课时）</h2>
+                        <div class="common" style="color: green;">
+                            <p>
+                                <strong>1、dom简介、dom结构</strong>
+                            </p>
+                            <p>
+                                <strong>2、node节点类型</strong>
+                                12种，重点介绍三种（元素、属性、文本）
+                            </p>
+                            <p>
+                                <strong>3、node属性常用操作</strong>
+                                getAttribute、setAttribute、removeAttribute、getAttibuteNode、childNodes、firstChild、lastChild、nextSibling、previousSibling、parentNode
+                            </p>
+                            <p>
+                                <strong>4、常用的方法</strong>
+                                DOM元素创建以及节点追加 createElement、 appendChild、 createTextNode、insertBefore、removeChild
+                            </p>
+                            <p>
+                                <strong>5、offsetWidth,clientWidth,scrollWidth(height同理)</strong>
+                            </p>
+                            <p>
+                                <strong>6、offsetTop,offsetLeft,offsetParent</strong>
+                            </p>
+                            <p>
+                                <strong>7、可视区大小滚动高度</strong>
+                                clientWidth / clientHeight 、innerWidth /innerHeight 、scrollTop / scrollLeft
+                            </p>
+                            <p>
+                                <strong>8、BOM</strong>
+                                核心对象window location、screen、history navigator
+                            </p>
+                            <p>
+                                <strong>9、窗口事件与方法</strong>
+                                onscroll、onresize、onfocus、onblur、open()、close() 等
+                            </p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>案例01_节点操作</li>
+                                    <li>案例02_碰撞小球</li>
+                                    <li>作业01_多个小球的运动</li>
+                                    <li>作业02_节点增删改操作</li>
+                                    <li>作业03_景点勾选操作</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第十二章: event事件对象、DOM2级方法（2课时）</h2>
+                        <div class="common">
+                            <p>
+                                <strong>1、event事件对象</strong>
+                                每个浏览器中的event 、event.pageX / event.pageY 、event.clientX / event.clientY
+                            </p>
+                            <p>
+                                <strong>2、事件监听</strong>
+                                attachEvent、addEventListener 事件绑定、事件解绑、事件捕获、事件冒泡
+                            </p>
+                            <p>
+                                <strong>3、滚轮事件</strong>
+                                wheelDelta、detail 、nmousewheel
+                            </p>
+                            <p>
+                                <strong>4、事件冒泡</strong>
+                                onmouseover/onmouseout和onmouseenter/onmouseleave区别 表格操作点击、cancelBubble、stopPropagation()
+                            </p>
+                            <p>
+                                <strong>5、键盘事件</strong>
+                                keyCode、onkeydown、 onkeypress、onkeyup、altKey、ctrlKey、shiftKey、which等
+                            </p>
+                            <p>
+                                <strong>6、阻止浏览器默认事件</strong>
+                                preventDefault 、屏蔽浏览器的右键菜单、禁止选中复制
+                            </p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>案例1_滚轮放大缩小</li>
+                                    <li>案例2_拖拽的实现</li>
+                                    <li>作业1_简单画板的实现</li>
+                                    <li>作业2_自定义滚动条</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第十三章：cookie和Local Storage（1课时）</h2>
+                        <div class="common">
+                            <p>
+                                <strong>1、什么是cookie</strong>
+                                、存储/获取cookie 、 封装方法 getCookie(key)、 setCookie（key,value,time）、removeCookie(key)
+                            </p>
+                            <p>
+                                <strong>2、本地存储</strong>
+                                Local Storage 与 cookie的区别
+                            </p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>案例1- cookie封装</li>
+                                    <li>案例2- 用户名的存储</li>
+                                    <li>案例3- 历史访问时间</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第十四章：正则表达式（2课时）</h2>
+                        <div class="common">
+                            <p>
+                                <strong>1、什么是正则表达式</strong>
+                            </p>
+                            <p>
+                                <strong>2、创建正则表达式常用方法</strong>
+                                / /、 new RegExp()、test（）、exec（）
+                            </p>
+                            <p>
+                                <strong>3、String中正则表达式方法</strong>
+                                match、replace、 search、 split
+                            </p>
+                            <p>
+                                <strong>4、标识符</strong>
+                                \n \r \t .\s \S \d \D \w \W ^a a$
+                            </p>
+                            <p>
+                                <strong>5、量词</strong>
+                                * + ? {m,n}
+                            </p>
+                            <p>
+                                <strong>6、贪婪和惰性</strong>
+                            </p>
+                            <p>
+                                <strong>7、子集</strong>
+                                () |
+                            </p>
+                            <p>
+                                <strong>8、replace应用</strong>
+                            </p>
+							<p>
+								<strong>9.单词边界：\b</strong>
+								var re=new RegExp('\\b'+'box'+'\\b', 'i');
+							</p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>案例1_常用的正则</li>
+                                    <li>作业1：表单验证</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第十五章:Ajax（2课时）</h2>
+                        <div class="common">
+                            <p>1、什么是ajax</p>
+                            <p>2、Ajax工作流程及代码 、创建ajax对象 、open方法 、send方法、最终接受</p>
+                            <p>3、HTTP状态码 status属性返回值所代表的意思</p>
+                            <p>4、简单实例运用</p>
+                            <p>5、实例：跨域调用百度搜索数据</p>
+                            <p>6、jQuery里面的ajax</p>
+                            <p>7、异步编程的回调地狱</p>
+                            <p>8、promise 异步编程的解决方案（解决回调地狱）</p>
+                            <p>9、fetch 对比XMLHTTPRequest、更优雅的发送请求</p>
+                            <p>10、关于跨域：jsonp、CORS</p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>案例1_瀑布流延时加载特效</li>
+                                    <li>案例2_模仿百度搜索</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第十六章：面向对象写法（4课时）</h2>
+                        <div class="common">
+                            <p>1、什么叫面向对象 面向过程、面向对象、两者区别</p>
+                            <p>2、构造函数 什么叫构造函数 、什么是工厂模式</p>
+                            <p>3、原型prototype</p>
+                            <p>4、链式操作</p>
+                            <p>5、包装对象</p>
+                            <p>6、封装性</p>
+                            <p>7、继承性 call造函数伪装		调用父级的构造函数——为了继承属性（继承的多种方式 、 类继承 、 复制继承、对象继承、更多继承方式省）</p>
+                            <p>8、多态</p>
+							<p>9、instanceof 运算符 （实例）</p>
+                            <p>10、es6 class面向对象写法</p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>案例1_可扩展的轮播组件开发</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>第十七章：jQuery特效（4课时）</h2>
+                        <div class="common">
+                            <p>
+                                1、jquery基础语法认识 jQuery 、下载jQuery 、JQ获取元素 、 $符号详解 、各种选择器的介绍、JQ操作元素内容、JQ操作元素样式
+                            </p>
+                            <p>
+                                2、JQ对象和JS对象 JQ对象和JS对象 、什么叫JQ对象、什么叫JS对象、JQ对象和JS对象的互相转换、JQ序列号相关、JQ里面的事件
+                            </p>
+                            <p>3、元素操作 遍历每个元素 、JQ操作标签属性、对class名的操作</p>
+                            <p>4、jQ动画特效 JQ的显示隐藏相关动画、animate函数详解、stop方法</p>
+                            <p>
+                                5、元素属性操作 各种宽高/距离width / height方法、scrollTop方法、offset方法、position方法
+                            </p>
+                            <p>
+                                6、元素节点操作 关于节点的操作：is方法、has方法、parent / parents方法、next / prev方法、siblings方法、find方法、children方法
+                            </p>
+                            <p>7、jquery高级运用 delay方法、extend的运用、map方法、Ajax相关方法（高级课程）</p>
+                            <div class="VipCase">
+                                <h3>本节课案例+作业</h3>
+                                <ul>
+                                    <li>案例1_常用网页特效30例</li>
+                                </ul>
+                            </div>
+                        </div>
+                     </div>
+                <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+                <script>
+                var obj = $("#CourseInfo .common .VipCase");
+                var len = obj.length;
+                var index = 333;
+                for (var i = 0; i < len; i++) {
+                    obj[i].mark = true;
+                }
+                $("#CourseInfo .common .VipCase").click(function() {
+                    index++;
+                    if (this.mark) {
+                        $(this).css({ "z-index": index });
+                        $(this).find("ul").css({ "display": "block" });
+                        this.mark = false;
+                    } else {
+                        $(this).find("ul").css({ "display": "none" });
+                        this.mark = true;
+                    }
+
+                });
+                </script>
+            </div>
+        </div>
+        <div id="qb-sougou-search" style="display: none; opacity: 0; left: 1052.2px; top: 500.4px;">
+            <p>搜索</p>
+            <p class="last-btn">复制</p>
+            <iframe src=""></iframe>
+        </div>
+        <footer>
+
+
+        </footer>
+</body>
+</html>

@@ -1,0 +1,652 @@
+<!--
+    声明文档类型: html(html5)
+    作用：符合w3c的统一标准规范
+    每个浏览器对html css js的代码都有不同编译模式(兼容模式)
+-->
+<!doctype html>
+<html lang="en">
+    <!--HyperText Markup Language 超文本标记语言 根目录节点标签-->
+<head>
+    <!--头部 规定一些信息:提供给浏览器识别 用户看不到 非可视化标签-->
+    <meta name="Author" content="张成&无风不起浪@你" src="tel:13469940053">
+    <meta name="keywords" content="无浪网、无浪素材网、无浪资源网、无风不起浪网" />
+    <meta name="description" content="无风不起浪网由张成初期学习前端知识所做的项目，网页一体网站，仅供学习和资料共享使用！" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>03移动端开发班</title>
+
+    <link rel="stylesheet" type="text/css" href="css/lesson.css">
+   <link rel="icon" type="img/png" href="">
+
+</head>
+<body>
+    <div id="page_header"></div>
+    <div id="mark_mask" style="display:none;position:fixed;top:40px;left:0;z-index:99999999;height:1000px;width:100%;background:rgba(0,0,0,0.4);"></div>
+    <div id="page">
+        <div class="page_content">
+            <div id="CourseInfo">
+                <div id="BootStrap" class="CourseVip">
+                    <div class="Header">
+                        第三阶段《移动端开发班》总课时：60个课时
+                        <br>独一无二的特色：全程以知识点结合案例讲解，让你吃透每个知识点</div>
+                    <h2>第一章：智能表单</h2>
+                    <div class="common">
+                        <p> <strong>input表单type属性值：</strong>
+                            <br>
+                            type = "email" 限制用户输入必须为Email类型
+                            <br>
+                            type="url" 限制用户输入必须为URL类型
+                            <br>
+                            type="date" 限制用户输入必须为日期类型
+                            <br>
+                            type="datetime" 显示完整日期 含时区
+                            <br>
+                            type="datetime-local" 显示完整日期 不含时区
+                            <br>
+                            type="time" 限制用户输入必须为时间类型
+                            <br>
+                            type="month" 限制用户输入必须为月类型
+                            <br>
+                            type="week" 限制用户输入必须为周类型
+                            <br>
+                            type="number" 限制用户输入必须为数字类型
+                            <br>
+                            type="range" 生成一个滑动条
+                            <br>
+                            type="search" 具有搜索意义的表单results="n"属性
+                            <br>
+                            type="color" 生成一个颜色选择表单
+                            <br>type="tel" 显示电话号码</p>
+                        <p> <strong>新增属性:</strong>
+                            <br>
+                            equired: required 内容不能为空
+                            <br>
+                            placeholder: 表单提示信息
+                            <br>
+                            autofocus:自动聚焦
+                            <br>
+                            pattern: 正则表达式 输入的内容必须匹配到指定正则范围
+                            <br>
+                            autocomplete:是否保存用户输入值默认为on，关闭提示选择 off
+                            <br>
+                            formaction: 在submit里定义提交地址
+                            <br>datalist: 输入框选择列表配合list使用 list值为datalist的id值</p>
+                        <p>
+                            <strong>表单验证反馈:</strong>
+                            <br>
+                            Invalid事件 validity对象(valid查看验证是否通过)
+                            <br>
+                            input.addEventListener('invalid',fn,false)
+                            <br>
+                            阻止默认验证：ev.preventDefault()
+                            <br>
+                            formnovalidate属性 : 关闭验证
+                            <br>
+                            oText.addEventListener("invalid",fn1,false);
+                            <br>
+                            ev.preventDefault()
+                            <br>
+                            valueMissing : 输入值为空时
+                            <br>
+                            typeMismatch : 控件值与预期类型不匹配
+                            <br>
+                            patternMismatch : 输入值不满足pattern正则
+                            <br>
+                            customError 不符合自定义验证
+                            <br>
+                            setCustomValidity();
+                            <br>
+                            自定义验证
+                            <br>
+                            tooLong : 超过maxLength最大限制
+                            <br>
+                            rangeUnderflow : 验证的range最小值
+                            <br>
+                            rangeOverflow：验证的range最大值
+                            <br>
+                            stepMismatch: 验证range 的当前值 是否符合min、max及step的规则
+                            <br>
+                            output: 计算或脚本输出
+                            <br></p>
+                    </div>
+                    <h2>第二章：H5拖拽</h2>
+                    <div class="common">
+                        <p>
+                            <strong>事件</strong>
+                            <br>
+                            ondragstart : 拖拽的一瞬间触发
+                            <br>
+                            ondrag : 拖拽前、拖拽结束之间，连续触发
+                            <br>
+                            ondragend : 拖拽结束触发
+                            <br></p>
+                        <p>
+                            <strong>目标元素(拖拽元素被拖到的地方)事件 :</strong>
+                            <br>
+                            ondragenter : 进入目标元素触发,鼠标光标进入
+                            <br>
+                            ondragover : 进入目标、离开目标之间，连续触发
+                            <br>
+                            ondragleave : 离开目标元素触发
+                            <br>
+                            ondrop : 在目标元素上释放鼠标触发
+                            <br>
+                            dataTransfer对象 FileReader(读取文件信息) MIME 类型
+                            <br>
+                            Base64 类型
+                            <br>
+                            FileReader API
+                            <br>
+                            FileList 对象
+                            <br>
+                            Blob 对象
+                            <br>
+                            Silce 读取部分内容
+                            <br>
+                            对象URL
+                            <br></p>
+                    </div>
+                    <h2>第三章：新增方法和历史管理</h2>
+                    <div class="common">
+                        <p>
+                            <strong>新增获取元素方法</strong>
+                            <br>
+                            document.querySelector() 选择单个元素，静态方法
+                            <br>
+                            document.querySelectorAll() 选择一组元素，静态方法
+                            <br>
+                            document.getElementsByClassName() 通过类名选择
+                            <br>
+                            <strong>classList</strong>
+                            <br>
+                            ele.classList.length 获取class的长度
+                            <br>
+                            ele.classList.add() 添加class名
+                            <br>
+                            ele.classList.remove() 删除class名
+                            <br>
+                            ele.classList.toggle() 切换class名，有就删除，没有就添加
+                            <br>
+                            ele.classList.contains() 判断是否有class名，有返回true，没有就返回false
+                            <br>
+                            <strong>dataset自定义属性</strong>
+                            <br>
+                            ele.dataset['a-b']
+                            <br>
+                            ele.removeAttribute('id')
+                            <br>
+                            ele.removeAttribute('data-a-b')
+                            <br>
+                            delete ele.dataset['aBC']
+                            <strong>JSON2</strong>
+                            <br>
+                            <strong>decodeURI( ) 解码</strong>
+                            <br>
+                            <strong>encodeURI( ) 编码</strong>
+                            <br>
+                            <strong>window.btoa( ) 编码</strong>
+                            <br>
+                            <strong>window.atob( ) 解码</strong>
+                            <br>
+                            <strong>history历史管理</strong>
+                            <br>
+                            onhashchange ：改变hash值来管理
+                            <br>
+                            history ：服务器下运行
+                            <br>
+                            pushState : 三个参数 ：数据 标题(都没实现) 地址(可选)
+                            <br>
+                            onpopstate事件 : 读取数据
+                            <br>
+                            event.state
+                            <br></p>
+                    </div>
+                    <h2>第四章：Ajax2</h2>
+                    <div class="common">
+                        <p>
+                            客户端和服务端
+                            <br>
+                            计算机通信
+                            <br>
+                            配置网站服务器
+                            <br>
+                            前端和后端
+                            <br>
+                            异步更新$.ajax( ) $.get( ) $.post( ) jsonp
+                            <br>
+                            Ajax跨域问题
+                            <br>
+                            jsonp的核心本质
+                            <br>
+                            ajax请求mp3
+                            <br>
+                            文件上传
+                            <br>
+                            同源同域名下跨文档操作
+                            <br>
+                            FormData对象
+                            <br>
+                            Symbol.iterator迭代器
+                            <br></p>
+                    </div>
+                    <h2>第五章：H5本地存储-Worker多线程-离线存储</h2>
+                    <div class="common">
+                        <p>
+                            <strong>H5本地存储</strong>
+                            <br>
+                            Cookie
+                            <br>
+                            Storage
+                            <br>
+                            sessionStorage
+                            <br>
+                            localStorage
+                            <br>
+                            <strong>Storage API</strong>
+                            setItem()
+                            <br>
+                            removeItem()
+                            <br>
+                            removeItem()
+                            <br>clear()</p>
+                        <p>
+                            <strong>Worker多线程</strong>
+                        </p>
+                        <p>
+                            <strong>离线存储</strong>
+                        </p>
+                        1、服务器设置头信息 : AddType text/cache-manifest .manifest
+                        <br>
+                        2、html标签加 : manifest=“xxxxx.manifest”
+                        <br>
+                        3、写manifest文件 :
+                        <br>
+                        离线的清单列表先写 : CACHE MANIFEST
+                        <br>
+                        FALLBACK : 第一个网络地址没获取到，就走第二个缓存的
+                        <br>
+                        NETWORK ：无论缓存中存在与否，均从网络获取
+                        <br></div>
+                    <h2>第六章：媒体流技术</h2>
+                    <div class="common">
+                        <strong>一、视频video</strong>
+                        <div class="common">
+                            <p>1、视频格式：ogg、MEPG4、WebM</p>
+                            <p>
+                                2、video标签属性:Src、Autoplay 、Poster、Autobuffer、controls、Width、Height、Loop、Preload...
+                            </p>
+                            <p>3、js API：play()、pause()、load()</p>
+                            <p>
+                                4、全屏: webkit element.webkitRequestFullScreen(); Firefox element.mozRequestFullScreen(); W3C element.requestFullscreen();
+                            </p>
+                            <p>
+                                5、退出全屏：webkit document.webkitCancelFullScreen(); Firefox document.mozCancelFullScreen(); W3C document.exitFullscreen();
+                            </p>
+                            <p>
+                                6、API属性：currentTime duration volume muted false /truepaused ended error currentSrc loadstart progress suspend emptied stalled play pause loadedmetadata loadeddata waiting playing canplay canplaythrough seeking seeked timeupdate ended ratechange durationchange volumechange
+                            </p>
+                            <p>7、兼容性处理：source video.js</p>
+                            <p>8、canvas截图功能及视频渲染</p>
+                        </div>
+                        <strong>二、音频audio</strong>
+                        <div class="common">
+                            <p>1、音频格式：Ogg、MP3 、Wav</p>
+                            <p>2、audio属性：autoplay、controls、loop 、preload、src...</p>
+                            <p>
+                                3、API属性：currentTime 、 duration 、 volume 、muted 、 false /truepaused 、ended、 error currentSrc 、loadstart、 progress、 suspend、 emptied 、stalled、 play、 pause 、loadedmetadata、 loadeddata 、waiting、 playing 、canplay、 canplaythrough 、seeking、 seeked 、timeupdate、 ended、 ratechange、 durationchange、volumechange
+                            </p>
+                            <p>4、兼容性处理：audio.js</p>
+                        </div>
+                        <strong>三、流媒体技术</strong>
+                        <div class="common">
+                            <p>1、在线直播系统开发:navigator.getUserMedia</p>
+                            美颜功能，可以对video显示效果过滤
+                        </div>
+                        <div class="Footer">项目实战:百度音乐播放器开发、在线直播系统开发</div>
+                    </div>
+                    <h2>第七章：高级绘图</h2>
+                    <strong>CANVAS绘图</strong>
+                    <br>
+                    <strong>一、canvas基本功</strong>
+                    <div class="common">
+                        <p>
+                            1、getContext("2d"); 设置绘图环境 、beginPath() :开始路劲、closePath():闭合路劲 、moveTo(x,y):将触笔移动到x,y点
+                        </p>
+                        <p>
+                            2、lineTo(x,y):绘制到x,y点、stroke(): 触笔方法 画线 默认为黑色 、fill():填充方法 、rect(x,y,w,h):矩形路劲
+                        </p>
+                        <p>3、save():保存路劲 、restore():恢复路劲</p>
+                    </div>
+                    <strong>二、绘制矩形</strong>
+                    <div class="common">
+                        <p>
+                            1、fillRect(x,y,w,h) 填充实心矩形 、 strokeRect(x,y,w,h) 绘制空心矩形 、clearRect(x,y,w,h) 清除矩形选区
+                        </p>
+                        <p>
+                            2、设置绘图样式：fillStyle: 填充颜色 、strokeStyle: 触笔颜色 、lineWidth: 触笔宽度(线宽)
+                        </p>
+                        <p>
+                            3、图形边界样式：lineJoin : 边界连接点样式、miter(默认值),round(圆角),bevel(斜角) lineCap: 端点样式 、butt(默认值),round(圆角),square(高度多出线宽一半)
+                        </p>
+                    </div>
+                    <strong>三、绘制圆形+绘制曲线+canvas变换</strong>
+                    <div class="common">
+                        <p>1、绘制圆形：arc(x,y,r,0,360,false)</p>
+                        <p>
+                            2、绘制曲线：arcTo(x1,y1,x2,y2,r) 、quadraticCurveTo(dx,dy,x1,y1)、bezierCurveTo(dx1,dy1,dx2,dy2,x1,y1)
+                        </p>
+                        <p>3、canvas变换：translate(x,y)、rotate(弧度): 旋转 弧度公式 ：角度*PI/180</p>
+                    </div>
+                    <strong>四、绘制图片</strong>
+                    <div class="common">
+                        <p>1、绘制图片：onload图片预加载 、drawImage(img,x,y,w,h);</p>
+                        <p>
+                            2、设置背景：createPattern(img,平铺方式)、平铺方式:repeat,repeat-x,repeat-y,no-repeat
+                        </p>
+                        <p>
+                            3、颜色渐变：线性渐变:createLinearGradient(x1,y1,x2,y2)、径向渐变:createRadialGradient(x1,y1,r1,x2,y2,r2)、addColorStop(位置,颜色)
+                        </p>
+                    </div>
+                    <strong>五、绘制文本</strong>
+                    <div class="common">
+                        <p>
+                            1、strokeText(文本,x,y)绘制空心文本、fillText(文本,x,y)绘制实心文本 、font = "font-size font-family" 注:尺寸 字体缺一不可
+                        </p>
+                        <p>
+                            2、textAlign = "";文本左右对齐方式 、textBaseline文本上下对齐方式 、measureText(文本).width; 文本实际宽度(只有宽度值)
+                        </p>
+                    </div>
+                    <strong>六、绘制阴影+像素操作+合成(叠加)</strong>
+                    <div class="common">
+                        <p>
+                            1、绘制阴影：shadowOffsetX,shadowOffsetY、x轴、y轴偏移、shadowBlur 阴影模糊度、shadowColor 、 阴影颜色、默认颜色:rgba(0,0,0,0)
+                        </p>
+                        <p>
+                            2、像素操作：createImageData(sx,sy)、创建新的、空白的 ImageData 对象、getImageData(x1,y1,w,h)(必须是同源下面才能获取)、返回 ImageData 对象 、putImageData(img,x2,y2)、把图像数据（从指定的 ImageData 对象）放回画布上
+                        </p>
+                        <p>
+                            3、合成(叠加)： globalAlpha 设置或返回绘图的当前 alpha 或透明值、globalCompositeOperation 设置或返回新图像如何绘制到已有的图像上 source-over（默认）、source-atop、source-in 、source-out、destination-over、destination-atop、destination-in、destination-out、lighter、copy、xor
+                        </p>
+                    </div>
+                    <strong>七、将画布导出为图片</strong>
+                    <div class="common">
+                        <p>1、将画布导出为图片:toDataURL</p>
+                        <p>2、事件:isPointInPath(x,y)</p>
+                        <p>3、插件库：http://jcscript.com</p>
+                        <p>4、图表插件:echarts</p>
+                    </div>
+                    <div class="Footer">项目实战:canvas时钟、背景、刮刮卡、马赛克、游戏等实例运用开发</div>
+                    <h2>SVG</h2>
+                    <strong>一、绘制圆形+椭圆</strong>
+                    <div class="common">
+                        <p>1、与canvas绘图的区别、引入方式</p>
+                        <p>
+                            2、circle:圆形 、圆心坐标：cx,cy、半径： r、fill 、 stroke 、 stroke-width 、 stlye样式 、fill = "none/transparent"
+                        </p>
+                        <p>3、ellipse:椭圆 、cx 、cy、rx、ry</p>
+                        <p>4、rect : 矩形 width height 宽高 、 坐标 x, y 、圆角 rx,ry</p>
+                        <p>5、line :线条 x1,y1,x2,y2 stroke-opacity 透明 fill-opacity</p>
+                    </div>
+                    <strong>二、折线+多边形</strong>
+                    <div class="common">
+                        <p>1、polyline:折线 、points:点坐标（x1 y1 x2 y2...）或(x1,y1,x2,y2....)</p>
+                        <p>2、polygon:多边形 、折线闭合 fill-rule:evenodd/nonzero;</p>
+                        <p>
+                            3、path: 路劲 d属性： M(起始坐标),L(结束坐标),H(水平线),V(垂直线),A(圆弧),Z(闭合路劲),C,S,Q,T 贝塞尔曲线
+                        </p>
+                        <p>4、g标签:组合元素 设置元素公共属性</p>
+                        <p>5、共用属性 transform = "translate(0,0)"</p>
+                        <p>6、text标签:x, y, text-anchor(对齐start end middle) font-size</p>
+                        <p>7、image 标签:x, y, width height xlink:href(图片地址)</p>
+                        <p>8、defs/symbol标签</p>
+                    </div>
+                    <strong>三、svg滤镜+svg渐变色</strong>
+                    <div class="common">
+                        <p>
+                            1、svg滤镜：feBlend、feColorMatrix 、feComponentTransfer、feComposite、feConvolveMatrix、 feDiffuseLighting、feDisplacementMap、feFloodfeGaussianBlur、feImage、feMerge、feMorphology、 feOffset、feSpecularLighting、feTile、feTurbulence、feDistantLight、fePointLight 、feSpotLight
+                        </p>
+                        <p>2、svg渐变色：线性渐变:linearGradient 径向渐变:radialGradient</p>
+                    </div>
+                    <strong>四、svg动画</strong>
+                    <div class="common">
+                        <p>1、svg动画:set 、不能连续的触发动画，只执行一次animate 基础动画属性</p>
+                        <p>2、animateColor 、改变颜色，此元素已被废弃，可用animate替代</p>
+                        <p>
+                            3、animateTransform 、 设置tansform属性的动画、animateMotion、 可以让SVG各种图形沿着特定的path路径运动
+                        </p>
+                    </div>
+                    <strong>五、svg视窗+插件运用</strong>
+                    <div class="common">
+                        <p>
+                            1、svg视窗：viewBox=”x y width height” 、preserveAspectRatio=”xMinYmin none”
+                        </p>
+                        <p>2、插件运用:snap.svg.js 、图表插件：highcharts</p>
+                    </div>
+                    <div class="Footer">项目实战:svg时钟、饼状图等</div>
+                    <h2>第八章：手机移动端事件处理</h2>
+                    <strong>基础事件</strong>
+                    <div class="common">
+                        <p>1)touchstart</p>
+                        <p>2)touchmove</p>
+                        <p>3)touchend</p>
+                        <p></p>
+                    </div>
+                    <strong>event对象</strong>
+                    <div class="common">
+                        <p>1、取消默认事件</p>
+                        <p>2、阻止冒泡</p>
+                        <p>3、防止文字选中和阻止默认菜单</p>
+                        <p>4、鼠标事件延迟</p>
+                        <p>5、事件点透问题</p>
+                    </div>
+                    <strong>touchEvent</strong>
+                    <div class="common">
+                        <p>1、touches</p>
+                        <p>2、changedTouches</p>
+                        <p>3、targetTouches</p>
+                    </div>
+                    <strong>滑屏处理</strong>
+                    <div class="common">
+                        <p>1、拖拽原理分析</p>
+                        <p>2、滑屏幻灯片简版</p>
+                    </div>
+                    <strong>transform2D 变换</strong>
+                    <div class="common">
+                        <p>1、rotate()、scale()、skew()、translate()</p>
+                        <p>2、left和top引起的回流问题及优化</p>
+                        <p>3、处理transform中不能通过计算后样式获取的问题</p>
+                    </div>
+                    <strong>transition 动画</strong>
+                    <div class="common">
+                        <p>1、 transition基本知识点</p>
+                        <p>2、贝赛尔曲线运动</p>
+                        <p>3、transitionend事件</p>
+                        <p>4、transition 不执行的BUG</p>
+                    </div>
+                    <strong>移动端适配方案</strong>
+                    <div class="common">
+                        <p>1、rem布局适配</p>
+                        <p>2、横竖屏切换适配</p>
+                        <p>3、fixed定位的BUG及替代方案</p>
+                        <p>4、滑屏导航缓冲回弹动画的实现</p>
+                        <p>5、完整版无缝滚动的滑屏幻灯片</p>
+                        <p>6、滑屏选项卡</p>
+                    </div>
+                    <strong>transform3D</strong>
+                    <div class="common">
+                        <p>1、滑动旋转的方块</p>
+                        <p>2、3d多边体制作</p>
+                        <p>3、正n边形的外角计算与正n边形的中心点计算</p>
+                    </div>
+                    <strong>3D桌面切换</strong>
+                    <div class="common">
+                        <p>1、百分比配合怪异盒模型布局适配</p>
+                        <p>2、animation的loading动画</p>
+                        <p>3、立体三棱柱制作</p>
+                        <p>4、页面绝对坐标获取</p>
+                        <p>5、IOS下3D变换的兼容问题及解决方案</p>
+                    </div>
+                    <strong>自定义滚动条</strong>
+                    <div class="common">
+                        <p>1、滚动条比例计算</p>
+                        <p>2、图片随滚动条的按需加载</p>
+                        <p>3、渲染优化-canvas(GPU渲染加速)</p>
+                        <p>4、transition安卓卡顿BUG--3D硬件加速</p>
+                    </div>
+                    <strong>多指事件</strong>
+                    <div class="common">
+                        <p>1、双指操作图片缩放和旋转</p>
+                        <p>2、安卓多指事件的兼容解决</p>
+                        <p>3、勾股定理与Math.atan2(与X轴的绝对夹角)</p>
+                        <p>4、实例：完整版的移动端相册</p>
+                    </div>
+                    <h2>第九章：移动端底层交互接口</h2>
+                    <strong>Web audio API</strong>
+                    <div class="common">
+                        <p>1、制作音频图形</p>
+                        <p>2、利用 canvas 绘制音频</p>
+                    </div>
+                    <strong>捕捉用户摄像头 – 媒体流</strong>
+                    <div class="common">
+                        <p>1、开启摄像头</p>
+                        <p>2、参数</p>
+                    </div>
+                    <strong>语音识别</strong>
+                    <div class="common">
+                        a)var newRecognition = new webkitSpeechRecognition( ) 实例化对象
+                        <br>
+                        b)newRecognition.continuous = true 设置是持续听还是听到声音之后就关闭接收
+                        <br>
+                        c)newRecognition.interimResults = true 是否返回结果
+                        <br>
+                        d)newRecognition.start( ) 开启语音识别
+                        <br>
+                        e)newRecognition.stop( ) 停止语音识别
+                        <br>
+                        f)newRecognition.onresult
+                        <br></div>
+                    <strong>设备电量</strong>
+                    <div class="common">navigator.battery</div>
+                    <strong>获取用户位置 – 地理位置</strong>
+                    <div class="common">
+                        <p>
+                            <strong>navigator.geolocation</strong>
+                            <br>
+                            单次定位请求 ：getCurrentPosition(请求成功,请求失败,数据收集方式)
+                            <br>
+                            请求成功函数经度 : coords.longitude
+                            <br>
+                            纬度 : coords.latitude
+                            <br>
+                            准确度 : coords.accuracy
+                            <br>
+                            海拔 : coords.altitude
+                            <br>
+                            海拔准确度 : coords.altitudeAcuracy
+                            <br>
+                            行进方向 : coords.heading
+                            <br>
+                            地面速度 : coords.speed
+                            <br>
+                            请求的时间: new Date(position.timestamp)
+                            <br>百度地图、高德地图运用</p>
+                    </div>
+                    <strong>环境光</strong>
+                    <div class="common">Ambient Light API</div>
+                    <strong>重力感应与陀螺仪</strong>
+                    <div class="common">
+                        重力感应
+                        <br>
+                        陀螺仪
+                        <br>
+                        OrientationChange (在屏幕发生翻转的时候触发)
+                        <br>
+                        DeviceOrientation（移动的角度）+DeviceMotion （移动的加速度信息）
+                        <br></div>
+                    <strong>Websocket-IM聊天窗口</strong>
+                    <div class="common">
+                        网络协议: http与https
+                        <br>
+                        web socket
+                        <br>API</div>
+                    <strong>NFC</strong>
+                    <div class="common">
+                        <strong>NFC有三组应用场景：</strong>
+                        <br>
+                        a)第一个是将设备靠近无线标签来交换一些数字信息或数据。
+                        <br>
+                        b)第二个是将两个设备彼此靠近，以便在它们之间交换一些信息或数据。
+                        <br>
+                        c)第三个是通过将手机靠近销售点终端而不是刷卡来进行付款。
+                        <br>
+                        <strong>现实应用场景</strong>
+                        <br>
+                        a)公交车、银行卡刷卡时
+                        <br>
+                        b)小米家居物联网，利用NFC功能 操控空调、电视、电冰箱、电灯、九号平衡车、蓝牙耳机。。等
+                        <br>
+                        <strong>区别</strong>
+                        与wi-fi、蓝牙、红外线等数据传输技术主要差异是有效距离不超过4厘米
+                        <br></div>
+                    <strong>震动</strong>
+                    <div class="common">navigator.vibrate</div>
+                    <strong>网络环境</strong>
+                    <div class="common">
+                        navigator.connection
+                        <br>
+                        Connection.bandwidth 宽带
+                        <br>
+                        navigator.onLine 是否在线
+                        <br>
+                        Connection.type 网络类型
+                        <br></div>
+                    <h2>第十章：移动端框架集企业项目实战开发</h2>
+                    <div class="common">
+                        <strong>Vue2/Angular4/React/ReactNative</strong>
+                        <br>
+                        每一期用一个框架，搭建后台数据接口，模拟真实开发环境开发项目。
+                        <br>
+                        <strong>本期运用企业级Vue2实战项目开发</strong>
+                        <br>
+                        1、Node环境安装
+                        <br>
+                        2、webpack项目部署及vue-cli脚手架项目搭建
+                        <br>
+                        3、认识vue
+                        <br>
+                        4、vue常用指令
+                        <br>
+                        5、Vue事件处理器
+                        <br>
+                        6、vue生命周期
+                        <br>
+                        7、vue组建及组建间通讯
+                        <br>
+                        8、vue核心插件运用：
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vue-router路由系统
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;axios数据交互
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vuex状态管理
+                        <br>
+                        9、vue UI组件库
+                        <br>
+                        10、移动端综合项目实战
+                        <br>
+                        <br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="qb-sougou-search" style="display: none; opacity: 0;">
+        <p>搜索</p>
+        <p class="last-btn">复制</p>
+        <iframe src="cid:frame-43-878444f2-f5b7-4016-9398-4883d8a09f4f@mhtml.blink"></iframe>
+
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
